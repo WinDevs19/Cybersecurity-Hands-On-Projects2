@@ -49,7 +49,7 @@ When authentication occurs, the supplied password is processed using the appropr
 
 This project demonstrates an important security principle:
 
-**Hashing a password does not automatically guarantee that the credential is secure.**
+Hashing a password does not automatically guarantee that the credential is secure.
 
 If a weak password is used, an attacker who obtains password-hash data may be able to recover the original password through offline guessing techniques.
 
@@ -107,51 +107,6 @@ When the generated hash matches the target hash, the tool identifies the corresp
 
 This demonstrates why weak or predictable passwords remain vulnerable even when plaintext passwords are not directly stored.
 
----
-
-## 📸 Project Evidence
-
-Screenshots from the controlled lab environment are stored in the `evidence` directory.
-
-Example structure:
-
-```text
-Project-01-Password-Hash-Cracker/
-│
-├── README.md
-├── hash_cracker.py
-│
-└── evidence/
-    ├── screenshot-01.png
-    ├── screenshot-02.png
-    └── screenshot-03.png
-```
-
-### Evidence 01 — Tool Execution
-
-Add screenshot showing the Password Hash Cracker Tool being executed.
-
-```markdown
-![Password Hash Cracker Execution](evidence/screenshot-01.png)
-```
-
-### Evidence 02 — Hash Analysis
-
-Add screenshot showing the controlled hash-analysis process.
-
-```markdown
-![Hash Analysis](evidence/screenshot-02.png)
-```
-
-### Evidence 03 — Successful Test
-
-Add screenshot demonstrating a successful match against an authorized test hash.
-
-```markdown
-![Successful Test](evidence/screenshot-03.png)
-```
-
----
 
 ## 🔍 Security Findings
 
@@ -245,10 +200,10 @@ The Password Hash Cracker Tool was tested in a controlled and authorized lab env
 
 ### Test Configuration
 
-- **Algorithm:** SHA-256
-- **Attack Method:** Dictionary-based hash comparison
-- **Test Environment:** Controlled lab
-- **Wordlist:** `wordlist.txt`
+- Algorithm: SHA-256
+- Attack Method:Dictionary-based hash comparison
+- Test Environment: Controlled lab
+- Wordlist: `wordlist.txt`
 
 ### Execution Result
 
@@ -266,7 +221,7 @@ The Password Hash Cracker Tool was tested in a controlled and authorized lab env
 
 ### Result Analysis
 
-The tool successfully identified the test password after **3 candidate attempts**, confirming that the hash-comparison logic was functioning correctly.
+The tool successfully identified the test password after 3 candidate attempts, confirming that the hash-comparison logic was functioning correctly.
 
 This demonstrates how passwords that appear in predictable wordlists can potentially be recovered when an attacker obtains an unsalted fast hash.
 
@@ -275,7 +230,8 @@ This demonstrates how passwords that appear in predictable wordlists can potenti
 
 ## ⚠️ Disclaimer
 
-This repository is intended solely for **cybersecurity education, research, and authorized security testing**.
+This repository is intended solely for 
+cybersecurity education, research, and authorized security testing.
 
 Do not use the techniques or code contained in this project against credentials, accounts, applications, or systems without explicit authorization.
 
@@ -283,7 +239,7 @@ Do not use the techniques or code contained in this project against credentials,
 
 ## 👤 Author
 
-**Winner Emmanuel Eyo**
+Winner Emmanuel Eyo
 
 Cybersecurity | SOC Analysis | Incident Response | Penetration Testing
 
