@@ -1,0 +1,17 @@
+AUTHORIZED LAB TEST
+===================
+Test algorithm: SHA-256
+Target test hash: caa3a3a7418daaa0a2d3830350589938ede9cca007762ad0601cbb44973d659d
+
+COMMAND RESULT
+--------------
+=======================================================
+       PASSWORD HASH CRACKER - EDUCATIONAL LAB
+=======================================================
+[+] Algorithm: SHA256
+[+] Starting authorized hash test...
+
+[+] MATCH FOUND
+[+] Password: security2026
+[+] Attempts: 3
+
