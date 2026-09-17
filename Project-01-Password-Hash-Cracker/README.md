@@ -239,7 +239,38 @@ The most important lesson from this project is that password security depends on
 Strong passwords, secure password-hashing mechanisms, unique salts, appropriate cost parameters, MFA, monitoring, and effective incident response all contribute to protecting user credentials.
 
 From a security analyst perspective, understanding how credential attacks work also improves the ability to recognize and investigate indicators of account compromise.
+## 🧪 Successful Lab Test
 
+The Password Hash Cracker Tool was tested in a controlled and authorized lab environment using a SHA-256 hash generated from a known test password.
+
+### Test Configuration
+
+- **Algorithm:** SHA-256
+- **Attack Method:** Dictionary-based hash comparison
+- **Test Environment:** Controlled lab
+- **Wordlist:** `wordlist.txt`
+
+### Execution Result
+
+```text
+=======================================================
+       PASSWORD HASH CRACKER - EDUCATIONAL LAB
+=======================================================
+[+] Algorithm: SHA256
+[+] Starting authorized hash test...
+
+[+] MATCH FOUND
+[+] Password: security2026
+[+] Attempts: 3
+```
+
+### Result Analysis
+
+The tool successfully identified the test password after **3 candidate attempts**, confirming that the hash-comparison logic was functioning correctly.
+
+This demonstrates how passwords that appear in predictable wordlists can potentially be recovered when an attacker obtains an unsalted fast hash.
+
+> All hashes, passwords, and wordlists used in this demonstration were created specifically for this authorized educational lab.
 ---
 
 ## ⚠️ Disclaimer
